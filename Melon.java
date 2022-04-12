@@ -22,5 +22,13 @@ public class Melon {
 		this.harvester = harvester;
 	}
 
+	//Boolean method based on criteria from prompt
+	public boolean isSellable(){
+		if ( this.field != 3 & this.shapeRating > 5 & this.colorRating > 5) {
+			return false;
+		} else {
+			return true;
+		}
+	}
 }
 
